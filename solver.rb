@@ -8,4 +8,16 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
+  def fizzbuzz(number)
+    if number.modulo(5).zero? && number.modulo(3).zero?
+      'fizzbuzz'
+    elsif number.modulo(5).zero?
+      'buzz'
+    elsif number.modulo(3).zero?
+      'fizz'
+    else
+      number.to_s
+    end
+  end
 end

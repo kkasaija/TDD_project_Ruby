@@ -12,7 +12,7 @@ describe 'factorial solver' do
     expect(solver.factorial(3)).to eq(6)
   end
   it 'should return factorial of -10 to raise error' do
-    expect{solver.factorial(-10)}.to raise_error('Negative values not allowed')
+    expect { solver.factorial(-10) }.to raise_error('Negative values not allowed')
   end
 end
 
@@ -28,17 +28,17 @@ describe 'Reverse word' do
   end
 end
 
-describe "fizzbuzz: -" do
-  it "should return fizz since n is divisible by 3 " do
+describe 'fizzbuzz: -' do
+  it 'should return fizz since n is divisible by 3 ' do
     expect(solver.fizzbuzz(3)).to eq('fizz')
   end
-  it "should return fizz since n is divisible by 5 " do
+  it 'should return fizz since n is divisible by 5 ' do
     expect(solver.fizzbuzz(5)).to eq('buzz')
   end
-  it "should return fizz since n is divisible by 3 and 5" do
+  it 'should return fizz since n is divisible by 3 and 5' do
     expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
   end
-  it "should return fizz since n is not divisible by 3 or 5 " do
+  it 'should return fizz since n is not divisible by 3 or 5 ' do
     expect(solver.fizzbuzz(11)).to eq('11')
   end
 end
