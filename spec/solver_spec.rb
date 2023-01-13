@@ -12,6 +12,6 @@ describe 'factorial solver' do
     expect(solver.factorial(3)).to eq(6)
   end
   it 'should return factorial of -10 to raise error' do
-    expect(solver.factorial(-10)).to raise_error('Negative values not allowed') 
+    expect{solver.factorial(-10)}.to raise_error('Negative values not allowed')
   end
 end
