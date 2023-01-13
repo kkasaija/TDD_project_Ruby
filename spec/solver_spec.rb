@@ -18,12 +18,12 @@ end
 
 describe 'Reverse word' do
   it 'reverse "hello" to "olleh"' do
-    expect (solver.reverse('hello')).to eq('olleh')
+    expect(solver.reverse('hello')).to eq('olleh')
   end
   it 'reverse "world" to "dlrow"' do
-    expect (solver.reverse('world')).to eq('dlrow')
+    expect(solver.reverse('world')).to eq('dlrow')
   end
   it 'reverse "he" to "eh"' do
-    expect (solver.reverse('he')).to eq('eh')
+    expect(solver.reverse('he')).to eq('eh')
   end
 end
